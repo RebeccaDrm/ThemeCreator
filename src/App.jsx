@@ -5,6 +5,7 @@ import ColorForm from "./Components/ColorForm/ColorForm";
 import "./App.css";
 import { uid } from "uid";
 
+
 function App() {
   const [colors, setColors] = useState(initialColors);
 
@@ -16,13 +17,27 @@ function App() {
     setColors(colors.filter((color) => color.id !== id)); // delete the color
   }
 
+  // Function to handle editing an existing color
+  function handleEditColor(id, updatedColor) {
+    setColors(
+      colors.map((color) =>
+        color.id === id ? { ...color, ...updatedColor } : color
+      )
+    );
+  }
+
   return (
     <>
       <h1>Theme Creator</h1>
       <ColorForm onSubmitColor={handleAddColor} />
 
       {colors.map((color) => (
-        <Color key={color.id} color={color} onDelete={handleDeleteColor}/>
+        <Color 
+        key={color.id} 
+        color={color} 
+        onDelete={handleDeleteColor}
+        onEdit={handleEditColor} 
+        />
       ))}
     </>
   );
