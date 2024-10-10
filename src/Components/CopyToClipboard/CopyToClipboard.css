@@ -1,0 +1,25 @@
+/* CopyToClipboard.css */
+.copy-container {
+    display: inline-flex;
+    align-items: center;
+  }
+  
+  .copy-button {
+    margin-right: 10px;
+    margin-left: 10px;
+    padding: 1px 8px;
+    border: none;
+    background-color: #252334;
+    color: white;
+    cursor: pointer;
+    border-radius: 4px;
+  }
+  
+  .copy-button:hover {
+    background-color: #83acda;
+  }
+  
+  .copy-confirmation {
+    color: rgb(2, 2, 2);
+    font-size: 14px;
+  }
