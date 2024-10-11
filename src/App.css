@@ -1,4 +1,10 @@
 body {
   font-family: "Segoe UI", "Helvetica Neue", Arial, sans-serif;
   padding: 10px;
+  background-color: rgb(203, 200, 207);
+}
+
+h1 {
+  text-align: center;
+  color: #252334;
 }

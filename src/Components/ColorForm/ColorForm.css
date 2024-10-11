@@ -1,0 +1,17 @@
+.color-form {
+  margin-left: 300px;
+  margin-right: 300px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding: 6px 120px;
+  border: none;
+  background-color: #44434a;
+  color: white;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+button {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
